@@ -100,7 +100,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="menu-bottom animated wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="500ms">
 					<div class="col-md-4 menu-bottom1">
 						<div class="btm-right">
-							<a href="events.html">
+							<a href="/detail">
 								<img src="images/me.jpg" alt="" class="img-responsive">
 								<div class="captn">
 									<h4>Lorem</h4>
