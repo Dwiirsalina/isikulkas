@@ -8,9 +8,9 @@ use App\Resep;
 
 class DetailController extends Controller
 {
-	public function detail(Request $r) 
+	public function detail(Request $r,$id) 
 	{
-		$detail=Resep::where('id','=',2)->firstOrFail();
+		$detail=Resep::where('id','=',$id)->firstOrFail();
 		$data['nama']=$detail->nama_masakan;
 		$data['jumlah']=$detail->jumlah_bahan_masakan;
 		$data['kategori']=explode(";",$detail->kat_masakan);
@@ -31,28 +31,36 @@ class DetailController extends Controller
 
 	public function nilaiBahan(string $bahan){
 		$hasil=DB::table('resep')
-			->select('nama_makanan')
-			->where('bahan_makanan','like','%'.$bahan.'%')
+			->select('nama_masakan')
+			->where('bahan_masakan','like',DB::raw("'%$bahan%'"))
 			->get();
 		return $hasil;
 	}
 
 	public function getResep(Request $r){
-		$final['resep']=array();
-		$notSorted=array();
+		$data['resep']=array();
+		$resep=array();
 		foreach ($r->bahan as $bahan) {
-			$result = nilaiBahan($bahan);
+			$result = $this->nilaiBahan($bahan);
 			foreach($result as $hasil){
-				$notSorted[$hasil]+=1;
+				if(array_key_exists($hasil->nama_masakan, $resep)){
+					$resep[$hasil->nama_masakan]+=1;	
+				}else{
+					$arr1= array($hasil->nama_masakan => 1);
+					$resep=$resep+$arr1;
+				}
 			}
 		}
-		$resep=arsort($notSorted);
-		foreach ($resep as $eResep) {
+		arsort($resep);
+		foreach ($resep as $eResep=>$value) {
 			$append = DB::table('resep')
-				->where('nama_resep','=',$eResep)
-				->get();
-			array_push($final['resep'],$append);
+				->select('id','nama_masakan','imageUrl', 'rating')
+				->where('nama_masakan','=',DB::raw("'$eResep'"))
+				->get()->toArray();
+			$push = json_decode(json_encode($append), True);
+			array_push($data['resep'],$push);
 		}
+		//var_dump($data['resep']);
 		return view('index',$data);
 	}
 

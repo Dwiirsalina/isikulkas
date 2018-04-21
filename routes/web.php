@@ -15,4 +15,6 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/detail','DetailController@detail');
+Route::get('/detail/{id}','DetailController@detail');
+
+Route::post('/filter','DetailController@getResep');

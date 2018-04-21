@@ -8,12 +8,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <html>
 <head>
 <title>Isikulkas</title>
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="{{ URL::asset('css/bootstrap.css') }}" rel="stylesheet" type="text/css" media="all" />
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="js/jquery.min.js"></script>
+<script src="{{ URL::asset('js/jquery.min.js') }}"></script>
 <!-- Custom Theme files -->
 <!--theme-style-->
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	
+<link href="{{ URL::asset('css/style.css') }}" rel="stylesheet" type="text/css" media="all" />	
 <!--//theme-style-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -23,10 +23,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!---->
 <link href='//fonts.googleapis.com/css?family=Raleway:400,200,100,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
 <link href='//fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'>
-<link href="css/styles.css" rel="stylesheet">
+<link href="{{ URL::asset('css/styles.css') }}" rel="stylesheet">
 <!-- animation-effect -->
-<link href="css/animate.min.css" rel="stylesheet"> 
-<script src="js/wow.min.js"></script>
+<link href="{{ URL::asset('css/animate.min.css') }}" rel="stylesheet"> 
+<script src="{{ URL::asset('js/wow.min.js') }}"></script>
 <script>
  new WOW().init();
 </script>
@@ -37,7 +37,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class="header head">
 	<div class="container">
 		<div class="logo animated wow pulse" data-wow-duration="1000ms" data-wow-delay="500ms">
-			<h1><a href="/index">IsiKulkas</a></h1>
+			<h1><a href="/">IsiKulkas</a></h1>
 		</div>
 	<div class="clearfix"></div>
 	</div>
@@ -52,7 +52,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<!--content-->
 <div class="single">
 		<div class="single-top">
-			<img class="img-responsive wow fadeInUp animated" data-wow-delay=".5s" src="{{$gambar}}" alt="" />
+			<img style="height: 120px; width: 120px;" class="img-responsive wow fadeInUp animated" data-wow-delay=".5s" src="{{$gambar}}" alt="" />
 				<div class="lone-line wow fadeInLeft " data-wow-delay=".5s">
 					<h4>{{ $nama}}</h4>
 					<ul style="line-height: 200%;font-size: 16px;font-weight:bold;" class="popular">

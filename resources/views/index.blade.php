@@ -9,6 +9,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <head>
 <title>IsiKulkas, The only way to maximize the foodstuffs</title>
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="shortcut icon" type="image/png" href="images/IsiKulkas.png"/>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="js/jquery.min.js"></script>
 <!-- Custom Theme files -->
@@ -106,40 +107,39 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 				<!-- misahin baris -->
 				<!-- <div class="clearfix"> </div> -->
-s
 				<!-- <div class="col-md-4 content-left animated wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="500ms"> -->
-				<div class="box" style="margin-right: 0;margin-left: 20%;">
-					<!-- <table style="border-collapse: separate; border-spacing: 30px"> -->
-					<div class="col-md-4" style="display: inline-block">
-						<h3 style="font-size: 30px">Buah-Buahan</h3>
-						<input type="checkbox" name="sayur" value="sayur1" style="float: left;"><h4 style="font-size: 20px">Sayur1</h4>
-						<input type="checkbox" name="sayur" value="sayur2" style="float: left;"><h4 style="font-size: 20px">Sayur2</h4>
-						<input type="checkbox" name="sayur" value="sayur1" style="float: left;"><h4 style="font-size: 20px">Sayur1</h4>
-						<input type="checkbox" name="sayur" value="sayur2" style="float: left;"><h4 style="font-size: 20px">Sayur2</h4>
-					</div>
-				
+			      	<form method="POST" action="{{ url('/filter') }}">
+			      		@csrf
+						<div class="box" style="margin-right: 0;margin-left: 20%;">
+							<!-- <table style="border-collapse: separate; border-spacing: 30px"> -->
+							<div class="col-md-4" style="display: inline-block">
+								<h3 style="font-size: 30px">Buah-Buahan</h3>
+								<input type="checkbox" name="bahan[]" value="tahu" style="float: left;"><h4 style="font-size: 20px">Tahu</h4>
+								<input type="checkbox" name="bahan[]" value="tempe" style="float: left;"><h4 style="font-size: 20px">Tempe</h4>
+								<input type="checkbox" name="bahan[]" value="daun bawang" style="float: left;"><h4 style="font-size: 20px">Daun bawang</h4>
+								<input type="checkbox" name="bahan[]" value="kentang" style="float: left;"><h4 style="font-size: 20px">Kentang</h4>
+							</div>
+						
+
+							<div class="col-md-4">
+								<h3 style="font-size: 30px">Daging/Telur</h3>
+								<input type="checkbox" name="bahan[]" value="daging ayam" style="float: left;"><h4 style="font-size: 20px">Daging Ayam</h4>
+								<input type="checkbox" name="bahan[]" value="daging sapi" style="float: left;"><h4 style="font-size: 20px">Daging Sapi</h4>
+								<input type="checkbox" name="bahan[]" value="cumi" style="float: left;"><h4 style="font-size: 20px">Cumi</h4>
+								<input type="checkbox" name="bahan[]" value="telur" style="float: left;"><h4 style="font-size: 20px">Telur</h4>
+							</div>
 
 
-				<div class="col-md-4">
-						<h3 style="font-size: 30px">Daging</h3>
-						<input type="checkbox" name="sayur" value="sayur1" style="float: left;"><h4 style="font-size: 20px">Sayur1</h4>
-						<input type="checkbox" name="sayur" value="sayur2" style="float: left;"><h4 style="font-size: 20px">Sayur2</h4>
-						<input type="checkbox" name="sayur" value="sayur1" style="float: left;"><h4 style="font-size: 20px">Sayur1</h4>
-						<input type="checkbox" name="sayur" value="sayur2" style="float: left;"><h4 style="font-size: 20px">Sayur2</h4>
-					</div>
-
-
-				<div class="col-md-4">
-						<h3 style="font-size: 30px">Bumbu</h3>
-						<input type="checkbox" name="sayur" value="sayur1" style="float: left;"><h4 style="font-size: 20px">Sayur1</h4>
-						<input type="checkbox" name="sayur" value="sayur2" style="float: left;"><h4 style="font-size: 20px">Sayur2</h4>
-						<input type="checkbox" name="sayur" value="sayur1" style="float: left;"><h4 style="font-size: 20px">Sayur1</h4>
-						<input type="checkbox" name="sayur" value="sayur2" style="float: left;"><h4 style="font-size: 20px">Sayur2</h4>
-					</div>
-
-
-				</div>	
-					
+							<div class="col-md-4">
+								<h3 style="font-size: 30px">Bumbu</h3>
+								<input type="checkbox" name="bahan[]" value="sayur1" style="float: left;"><h4 style="font-size: 20px">Sayur1</h4>
+								<input type="checkbox" name="bahan[]" value="sayur2" style="float: left;"><h4 style="font-size: 20px">Sayur2</h4>
+								<input type="checkbox" name="bahan[]" value="sayur1" style="float: left;"><h4 style="font-size: 20px">Sayur1</h4>
+								<input type="checkbox" name="bahan[]" value="sayur2" style="float: left;"><h4 style="font-size: 20px">Sayur2</h4>
+							</div>
+						</div>
+						<button type="submit" class="btn btn-warning btn-sml" style="width: 100%; margin-top: 20px;"><span class="glyphicon glyphicon-ok-sign"></span>Cari</button>
+					</form>
 				<!-- </div> -->
 				</div>
 
@@ -149,17 +149,22 @@ s
 		<div class="container">
 			<div class="content-mid">
 				<div class="menu-bottom animated wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="500ms">
-					<div class="col-md-4 menu-bottom1">
+					@if(isset($resep))
+					@foreach($resep as $data)
+					<div 
+					class="col-md-4 menu-bottom1">
 						<div class="btm-right">
-							<a href="/detail">
-								<img src="images/me.jpg" alt="" class="img-responsive">
+							<a href="/detail/{{ $data[0]['id'] }}">
+								<img style="height: 300px; width: 219.75px" src="{{ $data[0]['imageUrl'] }}"  alt="" class="img-responsive">
 								<div class="captn">
-									<h4>Lorem</h4>
-									<p>$20.00</p>				
+									<h4>{{ $data[0]['nama_masakan'] }}</h4>
+									<p>{{ $data[0]['rating'] }}</p>				
 								</div>
 							</a>						
 						</div>
-					</div>		
+					</div>	
+					@endforeach
+					@endif
 				<div class="clearfix"></div>
 			</div>
 		</div>
