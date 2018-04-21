@@ -51,40 +51,48 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="col-md-9 ">
 		<!--content-->
 <div class="single">
-	
 		<div class="single-top">
-			<img class="img-responsive wow fadeInUp animated" data-wow-delay=".5s" src="images/ss.jpg" alt="" />
+			<img class="img-responsive wow fadeInUp animated" data-wow-delay=".5s" src="{{$gambar}}" alt="" />
 				<div class="lone-line wow fadeInLeft " data-wow-delay=".5s">
-					<h4>NAMA MASAKAN</h4>
+					<h4>{{ $nama}}</h4>
 					<ul style="line-height: 200%;font-size: 16px;font-weight:bold;" class="popular">
 						<li>
-							JUMLAH :
+							JUMLAH BAHAN YANG DIBUTUHKAN :{{ $jumlah }}
 						</li>
 						<li>
-							BAHAN :
+							BAHAN :<br/>
+							@foreach($bahan as $data)
+								<span style="padding-left:2em">• {{ $data }}<br/></span>
+							@endforeach
 						</li>
 						<li>
-							RATING :
+							RATING :<br/>
+								<span style="padding-left:2em">{{ $rating }}</span>
 						</li>
 						<li>
-							KATEGORI:
+							KATEGORI:<br/>
+							@foreach($kategori as $data)
+								<span style="padding-left:2em">• {{ $data }}<br/></span>
+							@endforeach
 						</li>
 						<li>
-							SATUAN BAHAN :
+							CARA MEMASAK:<br/>
+							@foreach($cara as $data)
+								<span style="padding-left:2em">{{ $data }}<br/>
+								</span>
+							@endforeach	
 						</li>
 						<li>
-							UKURAN BAHAN :
-						</li>
-						<li>
-							CARA MEMASAK:
-						</li>
-						<li>
-							ALAT MEMASAK:
+							ALAT MEMASAK:<br/>
+							@foreach($alat as $data)
+								<span style="padding-left:2em">• {{ $data }}<br/>
+								</span>
+							@endforeach
 						</li>
 					</ul>
 				</div>
 		</div>
-		
+	
 </div>
 <!---->
 <!--//content-->
