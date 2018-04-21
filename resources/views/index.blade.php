@@ -95,15 +95,58 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="content-top-top">
 		<div class="container">
 			<div class="content-top">
-				<div class="col-md-4 content-left animated wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="500ms">
-					<h3>Resep</h3>
+				<div class="content-left animated wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="500ms">
+					<h3>KULKAS</h3>
 					<label><i class="glyphicon glyphicon-menu-up"></i></label>
-					<span>Resep yang sesuai dengan anda</span>
+					<span>Bahan di kulkas anda</span>
+
+				
+				<!-- <div class="col-md-8 content-right animated wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="500ms">
+				</div> -->
+
+				<!-- misahin baris -->
+				<!-- <div class="clearfix"> </div> -->
+s
+				<!-- <div class="col-md-4 content-left animated wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="500ms"> -->
+				<div class="box" style="margin-right: 0;margin-left: 20%;">
+					<!-- <table style="border-collapse: separate; border-spacing: 30px"> -->
+					<div class="col-md-4" style="display: inline-block">
+						<h3 style="font-size: 30px">Buah-Buahan</h3>
+						<input type="checkbox" name="sayur" value="sayur1" style="float: left;"><h4 style="font-size: 20px">Sayur1</h4>
+						<input type="checkbox" name="sayur" value="sayur2" style="float: left;"><h4 style="font-size: 20px">Sayur2</h4>
+						<input type="checkbox" name="sayur" value="sayur1" style="float: left;"><h4 style="font-size: 20px">Sayur1</h4>
+						<input type="checkbox" name="sayur" value="sayur2" style="float: left;"><h4 style="font-size: 20px">Sayur2</h4>
+					</div>
+				
+
+
+				<div class="col-md-4">
+						<h3 style="font-size: 30px">Daging</h3>
+						<input type="checkbox" name="sayur" value="sayur1" style="float: left;"><h4 style="font-size: 20px">Sayur1</h4>
+						<input type="checkbox" name="sayur" value="sayur2" style="float: left;"><h4 style="font-size: 20px">Sayur2</h4>
+						<input type="checkbox" name="sayur" value="sayur1" style="float: left;"><h4 style="font-size: 20px">Sayur1</h4>
+						<input type="checkbox" name="sayur" value="sayur2" style="float: left;"><h4 style="font-size: 20px">Sayur2</h4>
+					</div>
+
+
+				<div class="col-md-4">
+						<h3 style="font-size: 30px">Bumbu</h3>
+						<input type="checkbox" name="sayur" value="sayur1" style="float: left;"><h4 style="font-size: 20px">Sayur1</h4>
+						<input type="checkbox" name="sayur" value="sayur2" style="float: left;"><h4 style="font-size: 20px">Sayur2</h4>
+						<input type="checkbox" name="sayur" value="sayur1" style="float: left;"><h4 style="font-size: 20px">Sayur1</h4>
+						<input type="checkbox" name="sayur" value="sayur2" style="float: left;"><h4 style="font-size: 20px">Sayur2</h4>
+					</div>
+
+
+				</div>	
+					
+				<!-- </div> -->
 				</div>
-				<div class="col-md-8 content-right animated wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="500ms">
-				</div>
+
 				<div class="clearfix"> </div>
 			</div>
+		</div>
+		<div class="container">
 			<div class="content-mid">
 				<div class="menu-bottom animated wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="500ms">
 					<div class="col-md-4 menu-bottom1">
