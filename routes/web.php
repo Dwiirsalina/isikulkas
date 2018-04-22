@@ -17,4 +17,4 @@ Route::get('/', function () {
 
 Route::get('/detail/{id}','DetailController@detail');
 
-Route::post('/filter','DetailController@getResep');
+Route::post('/','DetailController@getResep');

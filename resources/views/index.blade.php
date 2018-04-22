@@ -108,34 +108,34 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<!-- misahin baris -->
 				<!-- <div class="clearfix"> </div> -->
 				<!-- <div class="col-md-4 content-left animated wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="500ms"> -->
-			      	<form method="POST" action="{{ url('/filter') }}">
+			      	<form method="POST" action="{{ url('/') }}">
 			      		@csrf
 						<div class="box" style="margin-right: 0;margin-left: 20%;">
 							<!-- <table style="border-collapse: separate; border-spacing: 30px"> -->
 							<div class="col-md-4" style="display: inline-block">
-								<h3 style="font-size: 30px">Buah-Buahan</h3>
-								<input type="checkbox" name="bahan[]" value="tahu" style="float: left;" <?php if(in_array("tahu",$_POST['bahan'])) echo "checked='checked'"; ?>><h4 style="font-size: 20px">Tahu</h4>
-								<input type="checkbox" name="bahan[]" value="tempe" style="float: left;" <?php if(in_array("tempe",$_POST['bahan'])) echo "checked='checked'"; ?>><h4 style="font-size: 20px">Tempe</h4>
-								<input type="checkbox" name="bahan[]" value="daun bawang" style="float: left;" <?php if(in_array("daun bawang",$_POST['bahan'])) echo "checked='checked'"; ?>><h4 style="font-size: 20px">Daun bawang</h4>
-								<input type="checkbox" name="bahan[]" value="kentang" style="float: left;" <?php if(in_array("kentang",$_POST['bahan'])) echo "checked='checked'"; ?>><h4 style="font-size: 20px">Kentang</h4>
+								<h3 style="font-size: 30px">Sayuran</h3>
+								<input type="checkbox" name="bahan[]" value="tahu" style="float: left;" <?php if(isset($_POST['bahan']))if(in_array("tahu",$_POST['bahan'])) echo "checked='checked'"; ?>><h4 style="font-size: 20px">Tahu</h4>
+								<input type="checkbox" name="bahan[]" value="tempe" style="float: left;" <?php if(isset($_POST['bahan']))if(in_array("tempe",$_POST['bahan'])) echo "checked='checked'"; ?>><h4 style="font-size: 20px">Tempe</h4>
+								<input type="checkbox" name="bahan[]" value="daun bawang" style="float: left;" <?php if(isset($_POST['bahan']))if(in_array("daun bawang",$_POST['bahan'])) echo "checked='checked'"; ?>><h4 style="font-size: 20px">Daun bawang</h4>
+								<input type="checkbox" name="bahan[]" value="kentang" style="float: left;" <?php if(isset($_POST['bahan']))if(in_array("kentang",$_POST['bahan'])) echo "checked='checked'"; ?>><h4 style="font-size: 20px">Kentang</h4>
 							</div>
 						
 
 							<div class="col-md-4">
 								<h3 style="font-size: 30px">Daging/Telur</h3>
-								<input type="checkbox" name="bahan[]" value="daging ayam" style="float: left;" <?php if(in_array("daging ayam",$_POST['bahan'])) echo "checked='checked'"; ?>><h4 style="font-size: 20px">Daging Ayam</h4>
-								<input type="checkbox" name="bahan[]" value="daging sapi" style="float: left;" <?php if(in_array("daging sapi",$_POST['bahan'])) echo "checked='checked'"; ?>><h4 style="font-size: 20px">Daging Sapi</h4>
-								<input type="checkbox" name="bahan[]" value="cumi" style="float: left;" <?php if(in_array("cumi",$_POST['bahan'])) echo "checked='checked'"; ?>><h4 style="font-size: 20px">Cumi</h4>
-								<input type="checkbox" name="bahan[]" value="telur" style="float: left;" <?php if(in_array("telur",$_POST['bahan'])) echo "checked='checked'"; ?>><h4 style="font-size: 20px">Telur</h4>
+								<input type="checkbox" name="bahan[]" value="daging ayam" style="float: left;" <?php if(isset($_POST['bahan']))if(in_array("daging ayam",$_POST['bahan'])) echo "checked='checked'"; ?>><h4 style="font-size: 20px">Daging Ayam</h4>
+								<input type="checkbox" name="bahan[]" value="daging sapi" style="float: left;" <?php if(isset($_POST['bahan']))if(in_array("daging sapi",$_POST['bahan'])) echo "checked='checked'"; ?>><h4 style="font-size: 20px">Daging Sapi</h4>
+								<input type="checkbox" name="bahan[]" value="cumi" style="float: left;" <?php if(isset($_POST['bahan']))if(in_array("cumi",$_POST['bahan'])) echo "checked='checked'"; ?>><h4 style="font-size: 20px">Cumi</h4>
+								<input type="checkbox" name="bahan[]" value="telur" style="float: left;" <?php if(isset($_POST['bahan']))if(in_array("telur",$_POST['bahan'])) echo "checked='checked'"; ?>><h4 style="font-size: 20px">Telur</h4>
 							</div>
 
 
 							<div class="col-md-4">
 								<h3 style="font-size: 30px">Bumbu</h3>
-								<input type="checkbox" name="bahan[]" value="bawang merah" style="float: left;" <?php if(in_array("bawang merah",$_POST['bahan'])) echo "checked='checked'"; ?>><h4 style="font-size: 20px">Bawang Merah</h4>
-								<input type="checkbox" name="bahan[]" value="bawang putih" style="float: left;" <?php if(in_array("bawang putih",$_POST['bahan'])) echo "checked='checked'"; ?>><h4 style="font-size: 20px">Bawang Putih</h4>
-								<input type="checkbox" name="bahan[]" value="garam" style="float: left;" <?php if(in_array("garam",$_POST['bahan'])) echo "checked='checked'"; ?>><h4 style="font-size: 20px">Garam</h4>
-								<input type="checkbox" name="bahan[]" value="gula" style="float: left;" <?php if(in_array("gula",$_POST['bahan'])) echo "checked='checked'"; ?>><h4 style="font-size: 20px">Gula</h4>
+								<input type="checkbox" name="bahan[]" value="bawang merah" style="float: left;" <?php if(isset($_POST['bahan']))if(in_array("bawang merah",$_POST['bahan'])) echo "checked='checked'"; ?>><h4 style="font-size: 20px">Bawang Merah</h4>
+								<input type="checkbox" name="bahan[]" value="bawang putih" style="float: left;" <?php if(isset($_POST['bahan']))if(in_array("bawang putih",$_POST['bahan'])) echo "checked='checked'"; ?>><h4 style="font-size: 20px">Bawang Putih</h4>
+								<input type="checkbox" name="bahan[]" value="garam" style="float: left;" <?php if(isset($_POST['bahan']))if(in_array("garam",$_POST['bahan'])) echo "checked='checked'"; ?>><h4 style="font-size: 20px">Garam</h4>
+								<input type="checkbox" name="bahan[]" value="gula" style="float: left;" <?php if(isset($_POST['bahan']))if(in_array("gula",$_POST['bahan'])) echo "checked='checked'"; ?>><h4 style="font-size: 20px">Gula</h4>
 							</div>
 						</div>
 						<button type="submit" class="btn btn-warning btn-sml" style="width: 100%; margin-top: 20px;"><span class="glyphicon glyphicon-ok-sign"></span>Cari</button>
@@ -173,12 +173,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="container">
 			<div class="content-top">
 				<div class="col-md-4 content-left animated wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="500ms">
-					<h3>News</h3>
+					<h3>Kekinian</h3>
 					<label><i class="glyphicon glyphicon-menu-up"></i></label>
-					<span>There are many variations</span>
+					<span>Menu pilihan</span>
 				</div>
 				<div class="col-md-8 content-right animated wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="500ms">
-					<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour , or randomised words which don't look even slightly believable.There are many variations by injected humour. There are many variations of passages of Lorem Ipsum available.There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form by injected humour , or randomised words</p>
+					<p></p>
 				</div>
 				<div class="clearfix"> </div>
 			</div>
