@@ -54,10 +54,11 @@ class DetailController extends Controller
 		arsort($resep);
 		foreach ($resep as $eResep=>$value) {
 			$append = DB::table('resep')
-				->select('id','nama_masakan','imageUrl', 'rating')
+				->select('id','nama_masakan','imageUrl', 'jumlah_bahan_masakan')
 				->where('nama_masakan','=',DB::raw("'$eResep'"))
 				->get()->toArray();
 			$push = json_decode(json_encode($append), True);
+			array_push($push,$value);
 			array_push($data['resep'],$push);
 		}
 		//var_dump($data['resep']);

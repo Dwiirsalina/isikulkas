@@ -52,7 +52,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<!--content-->
 <div class="single">
 		<div class="single-top">
-			<img style="height: 120px; width: 120px;" class="img-responsive wow fadeInUp animated" data-wow-delay=".5s" src="{{$gambar}}" alt="" />
+			<img class="img-responsive wow fadeInUp animated" data-wow-delay=".5s" src="{{$gambar}}" alt="" />
 				<div class="lone-line wow fadeInLeft " data-wow-delay=".5s">
 					<h4>{{ $nama}}</h4>
 					<ul style="line-height: 200%;font-size: 16px;font-weight:bold;" class="popular">
