@@ -185,71 +185,38 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="news-bottom">
 				<div class="news-bot">
 					<div class="col-md-6 news-bottom1 animated wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="500ms">
-						<a href="single.html">
+						<a href="/detail/4">
 							<div class="content-item">
 								<div class="overlay"></div>
 								<div class=" news-bottom2">
 									<ul class="grid-news">
-										<li><span><i class="glyphicon glyphicon-calendar"> </i>08.09.2014</span><b>/</b></li>
-										<li><span><i class="glyphicon glyphicon-comment"> </i>5 Comment</span><b>/</b></li>
+										<li><span><i class="glyphicon glyphicon-calendar"> </i>10 Bahan</span><b>/</b></li>
+										<li><span><i class="glyphicon glyphicon-comment"> </i>Rating : 9/10</span><b>/</b></li>
 										<li><span><i class="glyphicon glyphicon-share"> </i>Share</span></li>
 									</ul>
-									<p>There are many variations of passages of Lorem Ipsum available</p>
+									<p>Ayam Geprek</p>
 								</div>
 							</div>
 						</a>
 					</div>
 					<div class="col-md-6 news-bottom1 animated wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="500ms">
-						<a href="single.html">
+						<a href="/detail/11">
 							<div class="content-item content-item1">
 								<div class="overlay"></div>
 								<div class=" news-bottom2">
 									<ul class="grid-news">
-											<li><span><i class="glyphicon glyphicon-calendar"> </i>08.09.2014</span><b>/</b></li>
-											<li><span><i class="glyphicon glyphicon-comment"> </i>5 Comment</span><b>/</b></li>
+											<li><span><i class="glyphicon glyphicon-calendar"> </i>11 bahan</span><b>/</b></li>
+											<li><span><i class="glyphicon glyphicon-comment"> </i>
+											Rating : 10/10</span><b>/</b></li>
 											<li><span><i class="glyphicon glyphicon-share"> </i>Share</span></li>
 										</ul>
-									<p>There are many variations of passages of Lorem Ipsum available</p>
+									<p>Tahu dangdut medan</p>
 								</div>
 							</div>
 						</a>
 					</div>
 					<div class="clearfix"> </div>
 				</div>
-				<div class="news-bot">
-					<div class="col-md-6 news-bottom1">
-						<a href="single.html">
-							<div class="content-item content-item2 animated wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="500ms">
-								<div class="overlay"></div>
-								<div class=" news-bottom2">
-									<ul class="grid-news">
-											<li><span><i class="glyphicon glyphicon-calendar"> </i>08.09.2014</span><b>/</b></li>
-											<li><span><i class="glyphicon glyphicon-comment"> </i>5 Comment</span><b>/</b></li>
-											<li><span><i class="glyphicon glyphicon-share"> </i>Share</span></li>
-										</ul>
-									<p>There are many variations of passages of Lorem Ipsum available</p>
-								</div>
-							</div>
-						</a>
-					</div>
-					<div class="col-md-6 news-bottom1 animated wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="500ms">
-						<a href="single.html">
-							<div class="content-item content-item3">
-								<div class="overlay"></div>
-								<div class=" news-bottom2">
-									<ul class="grid-news">
-											<li><span><i class="glyphicon glyphicon-calendar"> </i>08.09.2014</span><b>/</b></li>
-											<li><span><i class="glyphicon glyphicon-comment"> </i>5 Comment</span><b>/</b></li>
-											<li><span><i class="glyphicon glyphicon-share"> </i>Share</span></li>
-										</ul>
-									<p>There are many variations of passages of Lorem Ipsum available</p>
-								</div>
-							</div>
-						</a>
-					</div>
-					<div class="clearfix"> </div>
-				</div>
-			
 			</div>
 		</div>
 	</div>

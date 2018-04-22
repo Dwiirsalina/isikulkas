@@ -381,7 +381,8 @@ ul.grid-news li b {
 }
 /*--conent--*/
 .content-item {
-  background: url(../images/ne.jpg) no-repeat;
+  background: url(http://notepam.com/wp-content/uploads/2017/10/resep-ayam-geprek-istimewa.jpg
+) no-repeat;
   -moz-backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
